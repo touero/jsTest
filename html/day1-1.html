@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blue {
+      background-color: blue;
+    }
+  </style>
+<head>
+
+<body>
+  <button class="blue">button</button>
+  <button>button</button>
+  <button>button</button>
+  <button>button</button>
+  <script>
+  let button = document.querySelectorAll('button')
+  for (let i = 0; i < button.length; i++){
+    button[i].addEventListener('click', function(){
+      document.querySelector('.blue').className = " "
+      this.className = 'blue'
+    })
+  }
+  </script>
+</body>
+
+</html>
