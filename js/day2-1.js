@@ -7,6 +7,7 @@ let size = prompt('random size int: ')
 
 let randomNumbers = [];
 for (let i = 0; i < size; i++) {
+  // Math.random() ==> [0,1)
   let randomNumber = Math.floor(Math.random() * 1000) + 1;
   randomNumbers.push(randomNumber);
 }
